@@ -1,0 +1,3190 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pet Sitting Calendar</title>
+	
+		<link rel="stylesheet" type="text/css" href="https://raw.githubusercontent.com/necolas/normalize.css/master/normalize.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+	</head>
+	
+	<body>
+
+		<div class="calendar_large">
+			<div class="calendar_header">
+				<div class="calendar_header_container centerer -xwide -no-top-padding -no-bottom-padding">
+					
+					<div class="calendar_header_top-row">
+						<h2 class="calendar_header-col-8 heading-serif -text-x-large -centered">
+							August 28 - September 3
+						</h2>
+
+						<div class="calender_header-col-2">
+							<button class="calendar_header_arrow -left">
+								<svg class="calendar_arrow_icon">
+									<span class="heading -medium -caps -bold margin-1-left">Previous Week
+									</span>
+								</svg>
+							</button>
+						</div> <!-- End of div calendar_header-col-2 -->
+
+						<div class="calendar_header-col-2 -last">
+							<button class="calendar_header_arrow -right">
+								<span class="heading -medium -caps -bold margin-1-right">
+								Next Week	
+								</span>
+								<svg class="calendar_arrow_icon"> </svg>
+							</button>
+						</div> <!-- End of div calendar_header-col-2 -last -->
+
+					</div> <!-- End of div calendar_header_top-row -->
+
+					<table class="calendar_table_head" aria-hidden="true">
+							<tbody>
+								<tr>
+									<td class="calendar_table_head_spacer"></td>
+									<th class="calendar_table_head_cell -horizontal">
+										<h3 class="heading -caps -bold -text-xsmall">
+											<span>Sun</span>
+											<span></span>
+											<span class="calendar_table_head_cell-accent">
+												<span></span>
+												<span>Aug 28</span>
+											</span>
+										</h3>
+									</th> <!-- Sunday -->
+
+									<th class="calendar_table_head_cell -horizontal">
+										<h3 class="heading -caps -bold -text-xsmall">
+											<span>Mon</span>
+											<span></span>
+											<span class="calendar_table_head_cell-accent">
+												<span></span>
+												<span>Aug 29</span>
+											</span>
+										</h3>
+									</th> <!-- Monday -->
+
+									<th class="calendar_table_head_cell -horizontal">
+										<h3 class="heading -caps -bold -text-xsmall">
+											<span>Tues</span>
+											<span></span>
+											<span class="calendar_table_head_cell-accent">
+												<span></span>
+												<span>Aug 30</span>
+											</span>
+										</h3>
+									</th> <!-- Tuesday -->
+
+									<th class="calendar_table_head_cell -horizontal">
+										<h3 class="heading -caps -bold -text-xsmall">
+											<span>Wed</span>
+											<span></span>
+											<span class="calendar_table_head_cell-accent">
+												<span></span>
+												<span>Aug 31</span>
+											</span>
+										</h3>
+									</th> <!-- Wednesday -->
+
+									<th class="calendar_table_head_cell -horizontal">
+										<h3 class="heading -caps -bold -text-xsmall">
+											<span>Thur</span>
+											<span></span>
+											<span class="calendar_table_head_cell-accent">
+												<span></span>
+												<span>Sept 1</span>
+											</span>
+										</h3>
+									</th> <!-- Thursday -->
+
+									<th class="calendar_table_head_cell -horizontal">
+										<h3 class="heading -caps -bold -text-xsmall">
+											<span>Fri</span>
+											<span></span>
+											<span class="calendar_table_head_cell-accent">
+												<span></span>
+												<span>Sept 2</span>
+											</span>
+										</h3>
+									</th> <!-- Friday -->
+
+									<th class="calendar_table_head_cell -horizontal">
+										<h3 class="heading -caps -bold -text-xsmall">
+											<span>Sat</span>
+											<span></span>
+											<span class="calendar_table_head_cell-accent">
+												<span></span>
+												<span>Sept 3</span>
+											</span>
+										</h3>
+									</th> <!-- Saturday -->
+								</tr>
+							</tbody>
+					</table>
+
+				</div> <!-- End of div - calendar_header_container -->
+			</div> <!-- End of div - calendar_header -->
+
+			<div class="calendar_container centerer -no-bottom-padding -no-top-padding -xwide">
+				<table>
+					<thead class="screenreader-only">
+						<tr>
+							<th></th>
+
+							<th class="calendar_table_head_cell -horizontal" scope="col">
+								<h3 class="heading -caps -bold -text-xsmall">
+									<span>Sun</span>
+									<span></span>
+									<span class="calendar_table_head_cell-accent">
+										<span></span>
+										<span>Aug 28</span>
+									</span>
+								</h3>
+							</th> <!-- Main calendar - Sunday -->
+
+							<th class="calendar_table_head_cell -horizontal" scope="col">
+								<h3 class="heading -caps -bold -text-xsmall">
+									<span>Mon</span>
+									<span></span>
+									<span class="calendar_table_head_cell-accent">
+										<span></span>
+										<span>Aug 29</span>
+									</span>
+								</h3>
+							</th> <!-- Main calendar - Monday -->
+
+							<th class="calendar_table_head_cell -horizontal" scope="col">
+								<h3 class="heading -caps -bold -text-xsmall">
+									<span>Tues</span>
+									<span></span>
+									<span class="calendar_table_head_cell-accent">
+										<span></span>
+										<span>Aug 30</span>
+									</span>
+								</h3>
+							</th> <!-- Main calendar - Tuesday -->
+
+							<th class="calendar_table_head_cell -horizontal" scope="col">
+								<h3 class="heading -caps -bold -text-xsmall">
+									<span>Wed</span>
+									<span></span>
+									<span class="calendar_table_head_cell-accent">
+										<span></span>
+										<span>Aug 31</span>
+									</span>
+								</h3>
+							</th> <!-- Main calendar - Wednesday -->
+
+							<th class="calendar_table_head_cell -horizontal" scope="col">
+								<h3 class="heading -caps -bold -text-xsmall">
+									<span>Thur</span>
+									<span></span>
+									<span class="calendar_table_head_cell-accent">
+										<span></span>
+										<span>Sept 1</span>
+									</span>
+								</h3>
+							</th> <!-- Main calendar - Thursday -->
+
+							<th class="calendar_table_head_cell -horizontal" scope="col">
+								<h3 class="heading -caps -bold -text-xsmall">
+									<span>Fri</span>
+									<span></span>
+									<span class="calendar_table_head_cell-accent">
+										<span></span>
+										<span>Sept 2</span>
+									</span>
+								</h3>
+							</th> <!-- Main calendar - Friday -->
+
+							<th class="calendar_table_head_cell -horizontal" scope="col">
+								<h3 class="heading -caps -bold -text-xsmall">
+									<span>Sat</span>
+									<span></span>
+									<span class="calendar_table_head_cell-accent">
+										<span></span>
+										<span>Sept 3</span>
+									</span>
+								</h3>
+							</th> <!-- Main calendar - Saturday -->
+						</tr>
+					</thead>
+
+					<tbody class="calendar_table_body">
+						<tr class="calendar_table_cells-columns">
+							<td class="calendar_table_time-column">
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>7</span>
+										<span class="calendar_table_head_cell-accent">AM</span>
+									</p>
+								</div> <!-- 7am -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>8</span>
+										<span class="calendar_table_head_cell-accent">AM</span>
+									</p>
+								</div> <!-- 8am -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>9</span>
+										<span class="calendar_table_head_cell-accent">AM</span>
+									</p>
+								</div> <!-- 9am -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>10</span>
+										<span class="calendar_table_head_cell-accent">AM</span>
+									</p>
+								</div> <!-- 10am -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>11</span>
+										<span class="calendar_table_head_cell-accent">AM</span>
+									</p>
+								</div> <!-- 11am -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>12</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 12pm -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>1</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 1pm -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>2</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 2pm -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>3</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 3pm -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>4</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 4pm -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>5</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 5pm -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>6</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 6pm -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>7</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 7pm -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>8</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 8pm -->
+
+								<div class="calendar_appt_time">
+									<p class="heading -text-xsmall -bold margin-0-bottom">
+										<span>9</span>
+										<span class="calendar_table_head_cell-accent">PM</span>
+									</p>
+								</div> <!-- 9pm -->
+							</td> <!-- End of table time column -->
+
+							<td class="calendar_table_column">
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 10am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 11am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 12pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 1pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 2pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 3pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 4pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 5pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 6pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9pm -->
+							</td> <!-- End of table column 1-->
+
+							<td class="calendar_table_column">
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 10am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 11am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 12pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 1pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 2pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 3pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 4pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 5pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 6pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9pm -->
+							</td> <!-- End of table column 2-->
+
+							<td class="calendar_table_column">
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 10am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 11am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 12pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 1pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 2pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 3pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 4pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 5pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 6pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9pm -->
+							</td> <!-- End of table column 3-->
+
+							<td class="calendar_table_column">
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 10am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 11am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 12pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 1pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 2pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 3pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 4pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 5pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 6pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9pm -->
+							</td> <!-- End of table column 4-->
+
+							<td class="calendar_table_column">
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 10am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 11am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 12pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 1pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 2pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 3pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 4pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 5pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 6pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9pm -->
+							</td> <!-- End of table column 5-->
+
+							<td class="calendar_table_column">
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 10am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 11am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 12pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 1pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 2pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 3pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 4pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 5pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 6pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9pm -->
+							</td> <!-- End of table column 6-->
+
+							<td class="calendar_table_column">
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 10am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 11am -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 12pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 1pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 2pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 3pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 4pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 5pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 6pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 7pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 8pm -->
+
+								<div class="calendar_time-slot">
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+									<div class="calendar_time-increment">
+										<div class="calendar_time-increment_indicator">
+										::before
+										::after	
+										</div>
+									</div>
+								</div> <!-- 9pm -->
+							</td> <!-- End of table column 7-->
+
+						</tr>
+					</tbody>
+				</table>
+			</div>  <!-- End of div - calendar_container -->
+
+		</div>	<!-- End of div - calendar_large	 -->
+	
+
+
+
+
+	<!-- Script tags -->
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
+	    <script src="https://cdnjs.cloudflare.com/ajax/libs/backbone.js/1.3.1/backbone-min.js"></script>
+		<script src='js/script.js' type="text/javascript"></script>
+		
+	</body>
+</html>
